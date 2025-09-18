@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FM Puerto Viejo 91.5</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Be Vietnam', sans-serif;
+      background: linear-gradient(to right, #005bea, #00c6fb);
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+    }
+    header img {
+      max-width: 220px;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+    #extassisnetwork {
+      margin: 20px auto;
+    }
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      font-size: 14px;
+      background: rgba(0,0,0,0.4);
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://extassisnetwork.com/player/Luna/luna.js"></script>
+</head>
+<body>
+  <header>
+    <img src="https://i.postimg.cc/rsYcKtj8/272167543-105226842071341-5125936123220530503-n.png" alt="FM Puerto Viejo">
+    <h1>FM Puerto Viejo 91.5</h1>
+    <p>Puerta de Corral Quemado - Belén, Catamarca</p>
+  </header>
+
+  <div id="extassisnetwork" style="width:360px; height:450px;"></div>
+
+  <footer>
+    © 2025 FM Puerto Viejo - Todos los derechos reservados
+  </footer>
+
+  <script>
+    $("#extassisnetwork").lunaradio({
+      streamurl: "http://server.laradio.online:8429/stream?type=http&nocache=35",
+      radioname: "FM PUERTO VIEJO",
+      coverimage: "https://i.postimg.cc/rsYcKtj8/272167543-105226842071341-5125936123220530503-n.png",
+      onlycoverimage: false,
+      userinterface: "big",
+      backgroundcolor: "#ffffff",
+      fontcolor: "#000000",
+      hightlightcolor: "#969696",
+      fontname: "Be Vietnam",
+      googlefont: "Be Vietnam",
+      fontratio: "0.4",
+      scroll: "true",
+      coverstyle: "animated",
+      usevisualizer: "real",
+      visualizertype: "6",
+      streamtype: "shoutcast2",
+      shoutcastpath: "/stream",
+      shoutcastid: "1",
+      metadatainterval: "5000",
+      volume: "100",
+      usestreamcorsproxy: "true",
+    });
+  </script>
+</body>
+</html>
